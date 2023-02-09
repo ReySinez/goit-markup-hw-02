@@ -1,11 +1,12 @@
 :root {
   --main-title-color: #2e2f42;
   --main-text-color: #434455;
-  --main-text-button: #ffffff;
+  --main-text-button: #4d5ae5;
   --main-text-button-2: #ffffff;
   --main-background-studio: #2e2f42;
   --main-hover-focus: #404bbf;
   --main-footer-text: #e7e9fc;
+  --main-team-color: #f4f4fd;
 }
 
 body {
@@ -14,7 +15,8 @@ body {
   background: #ffffff;
 }
 
-.header {
+.hidden {
+  visibility: hidden;
 }
 
 .list {
@@ -23,9 +25,6 @@ body {
 
 .link {
   text-decoration: none;
-}
-
-.header-navigation {
 }
 
 .header-logo {
@@ -40,13 +39,7 @@ body {
 }
 
 .header-studio {
-  color: #4d5ae5;
-}
-
-.header-list {
-}
-
-.header-item {
+  color: var(--main-text-button, #4d5ae5);
 }
 
 .header-link {
@@ -59,11 +52,11 @@ body {
 }
 
 .header-link:hover {
-  color: var(--main-title-color, #2e2f42);
+  color: var(--main-hover-focus, #404bbf);
 }
 
 .header-link:focus {
-  color: var(--main-hover-focus, #4d5ae5);
+  color: var(--main-hover-focus, #404bbf);
 }
 
 .header-email {
@@ -77,11 +70,11 @@ body {
 }
 
 .header-email:hover {
-  color: var(--main-hover-focus, #4d5ae5);
+  color: var(--main-hover-focus, #404bbf);
 }
 
 .header-email:focus {
-  color: var(--main-hover-focus, #4d5ae5);
+  color: var(--main-hover-focus, #404bbf);
 }
 
 .header-tel {
@@ -95,17 +88,17 @@ body {
 }
 
 .header-tel:hover {
-  color: var(--main-hover-focus, #4d5ae5);
+  color: var(--main-hover-focus, #404bbf);
 }
 
 .header-tel:focus {
-  color: var(--main-hover-focus, #4d5ae5);
+  color: var(--main-hover-focus, #404bbf);
 }
 
 .main-page {
   text-align: center;
 
-  color: #ffffff;
+  color: var(--main-text-button-2, #ffffff);
 }
 
 .main-page {
@@ -119,7 +112,7 @@ body {
   text-align: center;
   letter-spacing: 0.02em;
 
-  color: #ffffff;
+  color: var(--main-text-button-2, #ffffff);
 }
 
 .main-btn {
@@ -130,19 +123,16 @@ body {
   letter-spacing: 0.04em;
 
   color: var(--main-text-button-2, #ffffff);
-  background: #4d5ae5;
+  background: var(--main-text-button, #4d5ae5);
   cursor: pointer;
 }
 
 .main-btn:focus {
-  background: #404bbf;
+  background: var(--main-hover-focus, #404bbf);
 }
 
 .main-btn:hover {
-  background: #404bbf;
-}
-
-.main-desc {
+  background: var(--main-hover-focus, #404bbf);
 }
 
 .main-title {
@@ -163,9 +153,6 @@ body {
   color: var(--main-text-color, #434455);
 }
 
-.main-subtitle {
-}
-
 .main-title2 {
   font-weight: 700;
   font-size: 36px;
@@ -178,7 +165,7 @@ body {
 }
 
 .main-team {
-  background: #f4f4fd;
+  background: var(--main-team-color, #f4f4fd);
 }
 
 .main-team-logo {
@@ -233,11 +220,11 @@ footer {
   letter-spacing: 0.03em;
   text-transform: uppercase;
 
-  color: #f4f4fd;
+  color: var(--main-team-color, #f4f4fd);
 }
 
 .footer-studio {
-  color: #4d5ae5;
+  color: var(--main-text-button, #4d5ae5);
 }
 
 .filter-button {
@@ -248,20 +235,19 @@ footer {
   text-align: center;
   letter-spacing: 0.04em;
 
-  background: #4d5ae5;
-  color: var(--main-text-button, #ffffff);
+  background: var(--main-footer-text, #e7e9fc);
+  color: var(--main-text-button, #4d5ae5);
   cursor: pointer;
 }
 
 .filter-button:hover {
-  background: #404bbf;
+  background: var(--main-hover-focus, #404bbf);
+  color: var(--main-text-button-2, #ffffff);
 }
 
 .filter-button:focus {
-  background: #404bbf;
-}
-
-.row-1 {
+  background: var(--main-hover-focus, #404bbf);
+  color: var(--main-text-button-2, #ffffff);
 }
 
 .main-rows-title {
